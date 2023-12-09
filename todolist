@@ -162,9 +162,13 @@
 
         }
         function clearStorage() {
+            // Display a confirmation dialog to the user
             if (confirm("Do you areally want to clear?")) {
+            // If the user confirms, log a message indicating the clearing process is starting
                 console.log('Clearing the storage')
+            // Clear the data stored in the local storage
                 localStorage.clear();
+            // Call the 'update' function (assumed to be defined elsewhere) after clearing storage
                 update()
             }
         }
